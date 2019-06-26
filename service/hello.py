@@ -4,6 +4,6 @@ app = Flask(__name__)
 
 @app.route('/hello')
 def helloIndex():
-    return 'Hello World from Python Flask!'
+    return '<html><body style="background: yellow;" > Hello World from Python Flask! </body></html>'
 
 app.run(host='0.0.0.0', port= 80)
