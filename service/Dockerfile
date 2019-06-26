@@ -2,7 +2,10 @@ FROM python:3.6.8-alpine
 
 RUN pip install flask
 
-COPY app/* /
+RUN mkdir /app
+COPY app/* /app
+
+RUN ls /app
 
 EXPOSE 80
 
