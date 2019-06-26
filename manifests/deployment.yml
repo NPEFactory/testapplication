@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: localhost:5000/hello_world:v1
+        image: docker.io/ftamas/hello_world:v2
         ports:
         - containerPort: 80
           name: api
