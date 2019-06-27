@@ -1,4 +1,4 @@
-apiVersion: false
+
 kind: Deployment
 metadata:
   name: hello-world
