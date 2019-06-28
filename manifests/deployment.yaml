@@ -12,7 +12,9 @@ spec:
   selector:
     app: hello-world
   clusterIP: None
+  
 ---
+
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
