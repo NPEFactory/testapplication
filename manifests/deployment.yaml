@@ -22,7 +22,3 @@ spec:
           volumeMounts:
             - mountPath: /opt/config
               name: my-config-map
-      volumes:
-        - configMap:
-            name: configmap
-          name: my-config-map
