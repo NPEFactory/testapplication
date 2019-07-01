@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-world-config
+  namespace: '${ parameters.namespace }'
+  selfLink: /api/v1/namespaces/default/configmaps/game-config
+data:
+  color: yellow
