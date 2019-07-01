@@ -1,6 +1,0 @@
-{
-  "type": "github/file",
-  "reference": "https://raw.github.tools.sap/spinnaker-test/demodeploy/master/manifests/deployment.yaml?token=AAAMG2CQzgFBnr9Vv-t1fpRIUARHaChJks5dHdAmwA%3D%3D",
-  "name": "manifests/deployment.yaml",
-  "version": "default_artifact_version"
-}
