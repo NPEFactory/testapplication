@@ -5,4 +5,5 @@ metadata:
   namespace: '${ parameters.namespace }'
   selfLink: /api/v1/namespaces/default/configmaps/game-config
 data:
-  color: yellow
+  bgcolor: yellow
+  fgcolor: red
