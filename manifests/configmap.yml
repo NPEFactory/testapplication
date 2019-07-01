@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: hello-world-config
-  namespace: '${ parameters.namespace }'
+  namespace: '${ namespace }'
 data:
   bgcolor: yellow
   fgcolor: black
