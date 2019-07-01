@@ -4,9 +4,9 @@ metadata:
   labels:
     app: hello-world
   name: hello-world-deployment
-  namespace: ${ parameters.namespace }
+  namespace: '${ parameters.namespace }'
 spec:
-  replicas: ${ #toInt( parameters.replicacount) }
+  replicas: '${ #toInt( parameters.replicacount ) }'
   selector:
     matchLabels:
       app: hello-world
