@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-  name: nginx-deployment
+    app: hello-world
+  name: hello-world-deployment
   namespace: '${ parameters.namespace }'
 spec:
   replicas: '${ parameters.replicacount }'
   selector:
     matchLabels:
-      app: nginx
+      app: hello-world
   template:
     metadata:
       labels:
-        app: nginx
+        app: hello-world
     spec:
       containers:
-        - image: gcr.io/my-images/nginx
-          name: nginx
+        - image: docker.io/ftamas/hello_world_service:v3
+          name: hello-world
           ports:
             - containerPort: 80
