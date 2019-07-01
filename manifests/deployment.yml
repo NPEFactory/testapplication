@@ -20,4 +20,3 @@ spec:
           name: hello-world
           ports:
             - containerPort: 80
-
