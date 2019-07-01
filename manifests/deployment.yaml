@@ -5,7 +5,7 @@ metadata:
     app: nginx
   name: nginx-deployment
 spec:
-  replicas: 3
+  replicas: '${ parameters.replicacount }'
   selector:
     matchLabels:
       app: nginx
