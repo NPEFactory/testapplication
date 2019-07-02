@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: hello-world-config
-  namespace: '${ parameters.namespace }'
-data:
-  bgcolor: black
-  fgcolor: blue
