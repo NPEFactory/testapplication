@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hello-world
+  name: hello-world-deployment
+  namespace: '${ parameters.namespace }'
+spec:
+  replicas: '${ #toInt( parameters.replicacount ) }'
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+        - image: docker.io/ftamas/hello_world_service:v3
+          name: hello-world
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: hello-world-config
