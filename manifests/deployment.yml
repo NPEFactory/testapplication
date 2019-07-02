@@ -1,3 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-world-config
+  namespace: '${ parameters.namespace }'
+data:
+  NAMESPACE: '${ parameters.namespace }'
+  bgcolor: black
+  fgcolor: blue
+
+---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
