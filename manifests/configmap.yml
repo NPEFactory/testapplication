@@ -4,5 +4,6 @@ metadata:
   name: hello-world-config
   namespace: '${ parameters.namespace }'
 data:
+  NAMESPACE: '${ parameters.namespace }'
   bgcolor: black
   fgcolor: blue
