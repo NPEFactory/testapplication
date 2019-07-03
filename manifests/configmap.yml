@@ -7,5 +7,5 @@ metadata:
   namespace: '${ parameters.namespace }'
 data:
   NAMESPACE: '${ parameters.namespace }'
-  bgcolor: black
+  bgcolor: green
   fgcolor: blue
