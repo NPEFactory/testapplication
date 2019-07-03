@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: hello-world-config
   annotations: 
-    - strategy.spinnaker.io/versioned: false
+    strategy.spinnaker.io/versioned: false
   namespace: '${ parameters.namespace }'
 data:
   NAMESPACE: '${ parameters.namespace }'
