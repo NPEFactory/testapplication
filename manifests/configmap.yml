@@ -4,6 +4,7 @@ metadata:
   name: hello-world-config
   annotations: 
     strategy.spinnaker.io/versioned: 'false'
+    attempt.details.html.spinnaker.io/number: 1
   namespace: '${ parameters.namespace }'
 data:
   NAMESPACE: '${ parameters.namespace }'
