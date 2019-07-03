@@ -12,6 +12,11 @@ spec:
   selector:
     matchLabels:
       app: hello-world
+  strategy:
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 50%
+    type: "Recreate"
   template:
     metadata:
       labels:
