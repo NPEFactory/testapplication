@@ -4,6 +4,9 @@ metadata:
   labels:
     app: hello-world
   name: hello-world-deployment
+  annotations:
+    pod-info.details.html.spinnaker.io: "<a href='https://whatthecommit.com/{{ name }}'>Application dashboard</a>"
+    pod-info.details.spinnaker.io/used_manifest: {{ manifest }} 
   namespace: '${ parameters.namespace }'
 spec:
   replicas: '${ #toInt( parameters.replicacount ) }'
