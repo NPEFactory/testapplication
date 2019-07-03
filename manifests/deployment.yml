@@ -18,8 +18,8 @@ spec:
       app: hello-world
   strategy:
     rollingUpdate:
-      maxSurge: 50%
-      maxUnavailable: 50%
+      maxSurge: 40%
+      maxUnavailable: 40%
   template:
     metadata:
       labels:
