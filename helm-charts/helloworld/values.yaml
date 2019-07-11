@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: hub.docker.io/ftamas/hello-world-service
+  repository: docker.io/ftamas/hello_world_service
   tag: v4
   pullPolicy: IfNotPresent
 

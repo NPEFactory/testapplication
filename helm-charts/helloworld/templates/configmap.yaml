@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-world-config
+  annotations: 
+    strategy.spinnaker.io/versioned: 'true'
+    attempt.details.html.spinnaker.io/number: 1
+  namespace: {{ .Values.image.pullPolicy }}
+data:
+  NAMESPACE: {{ .Values.image.pullPolicy }}
+  bgcolor: white
+  fgcolor: black
