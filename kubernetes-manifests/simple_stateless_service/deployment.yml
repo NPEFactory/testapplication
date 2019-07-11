@@ -7,6 +7,7 @@ metadata:
   annotations:
     quick-links.details.html.spinnaker.io/responsible: "<a href='mailto:tamas.fenyvesi@sap.com'>Owner contact</a>"
     quick-links.details.html.spinnaker.io/jira: "<a href='https://jira.successfactors.com/projects/CKS/summary'>Ticket</a>"
+    quick-links.details.html.spinnaker.io/oncall: "<p style='bgcolor: red;' >Oncall</p>"
     monitoring.details.html.spinnaker.io/link: "<a href='https://whatthecommit.com/'>Application dashboard</a>"
     monitoring.details.html.spinnaker.io/management: "<a href='https://whatthecommit.com/'>Monitoring link</a>"
     monitoring.details.html.spinnaker.io/jstack: "<a href='https://whatthecommit.com/'>Stacktrace</a>"
