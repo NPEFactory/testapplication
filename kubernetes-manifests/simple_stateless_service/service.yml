@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: hello-world
   annotations:
-    attempt.details.html.spinnaker.io/number: 1
+    attempt.details.html.spinnaker.io/number: 2
   namespace: '${ parameters.namespace }'
   labels:
     app: hello-world

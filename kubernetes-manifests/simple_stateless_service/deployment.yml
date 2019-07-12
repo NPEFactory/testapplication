@@ -11,7 +11,6 @@ metadata:
     monitoring.details.html.spinnaker.io/link: '\<a href=https://whatthecommit.com/\>Application dashboard\</a\>'
     monitoring.details.html.spinnaker.io/management: '\<a href=https://whatthecommit.com/\>Monitoring link\</a\>'
     monitoring.details.html.spinnaker.io/jstack: '\<a href=https://whatthecommit.com/\>Stacktrace\</a\>'
-    attempt.details.html.spinnaker.io/number: 1
   namespace: '${ parameters.namespace }'
 spec:
   replicas: '${ #toInt( parameters.replicacount ) }'

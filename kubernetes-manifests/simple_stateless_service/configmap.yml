@@ -9,4 +9,4 @@ metadata:
 data:
   NAMESPACE: '${ parameters.namespace }'
   bgcolor: white
-  fgcolor: black
+  fgcolor: green
