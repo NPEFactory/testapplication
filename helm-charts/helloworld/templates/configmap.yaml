@@ -5,8 +5,6 @@ metadata:
   annotations: 
     strategy.spinnaker.io/versioned: 'true'
     attempt.details.html.spinnaker.io/number: 1
-  namespace: {{ .Release.namespace }}
 data:
-  NAMESPACE: {{ .Release.namespace }}
   bgcolor: white
   fgcolor: black
