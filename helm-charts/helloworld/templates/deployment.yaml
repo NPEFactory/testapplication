@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "helloworld.fullname" . }}
-  namespace: {{ .Values.namespace }}
+  namespace: {{ .Release.namespace }}
   labels:
 {{ include "helloworld.labels" . | indent 4 }}
 spec:

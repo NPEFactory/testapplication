@@ -4,8 +4,6 @@
 
 replicaCount: 1
 
-namespace: preview
-
 image:
   repository: docker.io/ftamas/hello_world_service
   tag: v4
