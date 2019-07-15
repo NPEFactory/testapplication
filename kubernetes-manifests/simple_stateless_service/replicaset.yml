@@ -23,8 +23,8 @@ spec:
         app: hello-world
     spec:
       containers:
-        - image: hello-world-image
-          name: hello-world
+        - name: hello-world
+          image: ftamas/hello_world_service
           ports:
             - containerPort: 80
           envFrom:
